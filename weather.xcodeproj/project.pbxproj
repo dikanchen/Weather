@@ -14,6 +14,9 @@
 		CEDD7440203775BC001D81D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDD743F203775BC001D81D5 /* Assets.xcassets */; };
 		CEDD7443203775BC001D81D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDD7441203775BC001D81D5 /* LaunchScreen.storyboard */; };
 		CEDD744E203775BC001D81D5 /* weatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD744D203775BC001D81D5 /* weatherTests.swift */; };
+		CEDD745920377ACE001D81D5 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD745820377ACE001D81D5 /* PageViewController.swift */; };
+		CEF78A462039D62400447F8F /* entry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF78A452039D62400447F8F /* entry.storyboard */; };
+		CEF78A4E2039F68E00447F8F /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF78A4D2039F68E00447F8F /* OnboardingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		CEDD7449203775BC001D81D5 /* weatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDD744D203775BC001D81D5 /* weatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherTests.swift; sourceTree = "<group>"; };
 		CEDD744F203775BC001D81D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEDD745820377ACE001D81D5 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		CEF78A452039D62400447F8F /* entry.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = entry.storyboard; sourceTree = "<group>"; };
+		CEF78A4D2039F68E00447F8F /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,11 +85,10 @@
 		CEDD7434203775BC001D81D5 /* weather */ = {
 			isa = PBXGroup;
 			children = (
-				CEDD7435203775BC001D81D5 /* AppDelegate.swift */,
-				CEDD7437203775BC001D81D5 /* ViewController.swift */,
-				CEDD7439203775BC001D81D5 /* Main.storyboard */,
+				CEF78A4F2039FEBE00447F8F /* Controller */,
+				CEF78A502039FEDE00447F8F /* Views */,
+				CEF78A512039FEFF00447F8F /* Models */,
 				CEDD743F203775BC001D81D5 /* Assets.xcassets */,
-				CEDD7441203775BC001D81D5 /* LaunchScreen.storyboard */,
 				CEDD7444203775BC001D81D5 /* Info.plist */,
 				CEDD743C203775BC001D81D5 /* weather.xcdatamodeld */,
 			);
@@ -97,6 +102,34 @@
 				CEDD744F203775BC001D81D5 /* Info.plist */,
 			);
 			path = weatherTests;
+			sourceTree = "<group>";
+		};
+		CEF78A4F2039FEBE00447F8F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD745820377ACE001D81D5 /* PageViewController.swift */,
+				CEDD7437203775BC001D81D5 /* ViewController.swift */,
+				CEF78A4D2039F68E00447F8F /* OnboardingViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CEF78A502039FEDE00447F8F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD7439203775BC001D81D5 /* Main.storyboard */,
+				CEDD7441203775BC001D81D5 /* LaunchScreen.storyboard */,
+				CEF78A452039D62400447F8F /* entry.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CEF78A512039FEFF00447F8F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD7435203775BC001D81D5 /* AppDelegate.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEDD7443203775BC001D81D5 /* LaunchScreen.storyboard in Resources */,
+				CEF78A462039D62400447F8F /* entry.storyboard in Resources */,
 				CEDD7440203775BC001D81D5 /* Assets.xcassets in Resources */,
 				CEDD743B203775BC001D81D5 /* Main.storyboard in Resources */,
 			);
@@ -204,7 +238,9 @@
 			files = (
 				CEDD743E203775BC001D81D5 /* weather.xcdatamodeld in Sources */,
 				CEDD7438203775BC001D81D5 /* ViewController.swift in Sources */,
+				CEF78A4E2039F68E00447F8F /* OnboardingViewController.swift in Sources */,
 				CEDD7436203775BC001D81D5 /* AppDelegate.swift in Sources */,
+				CEDD745920377ACE001D81D5 /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
