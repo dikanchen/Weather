@@ -33,7 +33,9 @@ class ViewController: UIViewController{
     @IBOutlet weak var weatherimg: UIImageView!
     
     @IBAction func setcCityTapped(_ sender: AnyObject) {
-        getweather(urlstring: "http://api.openweathermap.org/data/2.5/weather?zip=\(zipcodeTextfield.text!),us&APPID=c4a4d7e0b3a596c0610cfea3849d19ea")
+        let viewModel = WeatherViewModel(myurl: "http://api.openweathermap.org/data/2.5/weather?zip=\(zipcodeTextfield.text!),us&APPID=c4a4d7e0b3a596c0610cfea3849d19ea")
+        let newurl = viewModel.urlstring1
+        getweather(urlstring: newurl)
     }
     
     @IBAction func reset(_ sender: UIButton) {
@@ -44,7 +46,9 @@ class ViewController: UIViewController{
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         let defaultzipcode = UserDefaults.standard.value(forKey: "zipcode")!
-        getweather(urlstring: "http://api.openweathermap.org/data/2.5/weather?zip=\(defaultzipcode),us&APPID=c4a4d7e0b3a596c0610cfea3849d19ea")
+        let viewModel = WeatherViewModel(myurl: "http://api.openweathermap.org/data/2.5/weather?zip=\(defaultzipcode),us&APPID=c4a4d7e0b3a596c0610cfea3849d19ea")
+        let newurl = viewModel.urlstring1
+        getweather(urlstring: newurl)
         
     }
     
